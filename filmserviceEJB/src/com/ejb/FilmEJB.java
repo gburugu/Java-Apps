@@ -12,9 +12,6 @@ import javax.persistence.Query;
 import com.entity.Film;
 
 @Stateless
-// ********************************************************************************************
-// these below two annotations are very important - I wasted a couple of hours to discover them
-//**********************************************************************************************
 @Local(FilmEJBLocal.class)
 @LocalBean
 public class FilmEJB implements FilmEJBLocal {
