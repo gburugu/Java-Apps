@@ -17,32 +17,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/*@Entity
-@NamedQueries({
-	@NamedQuery(name="Film.getAll", query="select f from Film f order by f.title")
-})
-@XmlRootElement
-public class Film {
-	@Id
-	@Column(name="film_id")	
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int filmId;
-	private String title;
-	public int getFilmId() {
-		return filmId;
-	}
-	public void setFilmId(int filmId) {
-		this.filmId = filmId;
-	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-}*/
-
-
 @Entity
 @Table(name = "film")
 @XmlRootElement
