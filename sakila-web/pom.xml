@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.me.sakila</groupId>
+		<artifactId>sakila</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>sakila-web</artifactId>
+	<packaging>war</packaging>
+
+
+	<dependencies>
+
+
+
+	<dependency>
+		<groupId>${project.groupId}</groupId>
+		<artifactId>sakila-ejb</artifactId>
+		<version>${project.version}</version>
+		<!-- <scope>provided</scope> -->
+	</dependency>
+
+	<!-- <dependency> -->
+	<!-- <groupId>com.me.sakila</groupId> -->
+	<!-- <artifactId>sakila-ejb</artifactId> -->
+	<!-- <version>0.0.1-SNAPSHOT</version> -->
+	<!-- </dependency> -->
+
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxrs</artifactId>
+			<version>3.0.16.Final</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+
+
+	</dependencies>
+
+</project>
